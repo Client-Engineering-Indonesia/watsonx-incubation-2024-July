@@ -1,12 +1,12 @@
 {
-  "name": "Introductionpart_Incu-action",
+  "name": "test-watsonxassistant-action",
   "type": "action",
   "valid": true,
   "status": "Available",
-  "created": "2024-05-10T04:18:23.146Z",
-  "updated": "2024-05-10T16:07:03.613Z",
+  "created": "2024-07-17T03:55:32.976Z",
+  "updated": "2024-07-17T04:21:35.920Z",
   "language": "en",
-  "skill_id": "0ada366e-8c6e-46f8-9f93-b60a0be9e094",
+  "skill_id": "1506a1f6-580b-415f-90f2-be2d02141053",
   "workspace": {
     "actions": [
       {
@@ -64,7 +64,8 @@
                 "method": "POST",
                 "internal": {
                   "spec_hash_id": "8566081a305e8f8ade4e9bd3887da0600e87948417fc10ba38ee121426f8c50b",
-                  "catalog_item_id": "b2c4315f-5205-4e55-aa0a-bfab71f0ccee"
+                  "match_scenario": 1,
+                  "catalog_item_id": "80abb6c2-18a0-4c68-a8a6-b9bd320d98f4"
                 },
                 "request_mapping": {
                   "body": [
@@ -120,7 +121,7 @@
                   "path": [
                     {
                       "value": {
-                        "scalar": "61b2ebf3-3cff-401b-8465-db7c11d3cf75"
+                        "scalar": "91ef1c18-cb65-4580-ab98-e638481d2e11"
                       },
                       "parameter": "project_id"
                     }
@@ -164,7 +165,8 @@
                 "method": "POST",
                 "internal": {
                   "spec_hash_id": "540081b16fe217626f2ff197e583c2f1c7ef19f0752c8b875ec454036cfdda7f",
-                  "catalog_item_id": "e4a7d2da-a577-4f91-b91c-2f28f9d898e6"
+                  "match_scenario": 1,
+                  "catalog_item_id": "a3960238-e016-4efa-9f72-a2e675b66650"
                 },
                 "request_mapping": {
                   "body": [
@@ -182,7 +184,7 @@
                     },
                     {
                       "value": {
-                        "scalar": "de54acc1-d470-48aa-be47-8e774bfe1d70"
+                        "scalar": "a1900a71-e5fa-49a9-a934-c7532dca2c2b"
                       },
                       "parameter": "project_id"
                     },
@@ -334,7 +336,7 @@
             "data_type": "any"
           },
           {
-            "title": "",
+            "title": "No response",
             "privacy": {
               "enabled": false
             },
@@ -346,122 +348,6 @@
               "enabled": false
             },
             "variable": "step_733_result_1",
-            "data_type": "any"
-          }
-        ],
-        "launch_mode": "learning",
-        "next_action": "action_41522",
-        "topic_switch": {
-          "allowed_from": true,
-          "allowed_into": true,
-          "never_return": false
-        },
-        "disambiguation_opt_out": false
-      },
-      {
-        "type": "standard",
-        "steps": [
-          {
-            "step": "step_607",
-            "output": {
-              "generic": [
-                {
-                  "values": [
-                    {
-                      "text_expression": {
-                        "concat": [
-                          {
-                            "scalar": "Tentu, informasi apa yang ingin kamu ketahui?"
-                          }
-                        ]
-                      }
-                    }
-                  ],
-                  "response_type": "text",
-                  "selection_policy": "sequential"
-                }
-              ]
-            },
-            "handlers": [],
-            "question": {
-              "free_text": true
-            },
-            "resolver": {
-              "type": "continue"
-            },
-            "variable": "step_607",
-            "next_step": "step_214"
-          },
-          {
-            "step": "step_214",
-            "context": {
-              "variables": [
-                {
-                  "value": {
-                    "variable": "step_607"
-                  },
-                  "skill_variable": "question"
-                }
-              ]
-            },
-            "handlers": [],
-            "resolver": {
-              "type": "search",
-              "response": {
-                "query": "${question}",
-                "query_type": "natural_language"
-              }
-            },
-            "variable": "step_214",
-            "next_step": "step_744"
-          },
-          {
-            "step": "step_744",
-            "handlers": [],
-            "resolver": {
-              "type": "replay",
-              "clear": [
-                {
-                  "variable": "step_607"
-                },
-                {
-                  "variable": "step_214"
-                }
-              ]
-            },
-            "variable": "step_744"
-          }
-        ],
-        "title": "watsondiscovery",
-        "action": "action_41522",
-        "boosts": [],
-        "handlers": [],
-        "condition": {
-          "intent": "action_41522_intent_41539"
-        },
-        "variables": [
-          {
-            "title": "No response",
-            "privacy": {
-              "enabled": false
-            },
-            "variable": "step_214",
-            "data_type": "any"
-          },
-          {
-            "title": "Tentu, informasi apa yang ingin kamu ketahui?",
-            "privacy": {
-              "enabled": false
-            },
-            "variable": "step_607",
-            "data_type": "any"
-          },
-          {
-            "title": "No response",
-            "privacy": {
-              "enabled": false
-            },
-            "variable": "step_744",
             "data_type": "any"
           }
         ],
@@ -1019,17 +905,6 @@
         ]
       },
       {
-        "intent": "action_41522_intent_41539",
-        "examples": [
-          {
-            "text": "Aku mau nanya langsung dari dokumen"
-          },
-          {
-            "text": "aku mau teks asli dari dokumennya"
-          }
-        ]
-      },
-      {
         "intent": "fallback_connect_to_agent",
         "examples": [
           {
@@ -1243,9 +1118,9 @@
     "learning_opt_out": false
   },
   "description": "created for assistant 69b72ba4-8fa7-4e51-835f-82a2210931fa",
-  "assistant_id": "69b72ba4-8fa7-4e51-835f-82a2210931fa",
-  "workspace_id": "0ada366e-8c6e-46f8-9f93-b60a0be9e094",
+  "assistant_id": "34e8ac1e-dc46-4c54-997f-5b791718229a",
+  "workspace_id": "1506a1f6-580b-415f-90f2-be2d02141053",
   "dialog_settings": {},
   "next_snapshot_version": "1",
-  "environment_id": "d4938f20-c57a-449f-b655-e5c5cda880a5"
+  "environment_id": "3cec3b9d-3b32-490e-8c0e-7d7dd273ec04"
 }
