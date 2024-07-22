@@ -4,7 +4,7 @@ Front-end juga menggukan open source HTML web component yang dibuat oleh IBM, di
 Aplikasi ini memungkinkan anda melakukan tanya jawab menggunakan dokumen anda sendiri dengan bantuan LLM Model. Metode yang digunakan untuk ini dinamakan [RAG](https://research.ibm.com/blog/retrieval-augmented-generation-RAG).
 
 
-Coba secara langsung applikasi yang sudah di deploy [disini](https://rag-qna.1gmk3v763a4v.us-south.codeengine.appdomain.cloud/rag#)
+Pelajari dengan lebih mudah konsep RAG dengan menggunakan Notebook Berikut: [Lab-4 Rag Essential](https://github.com/Client-Engineering-Indonesia/watsonx-incubation-2024-July/blob/c90bb440c2052b673aa2a413391c322cb4fd3960/Lab%204a%20-%20Building%20QnA%20with%20watsonx.ai%20and%20carbon%20with%20retrieval%20augmented%20generation%20with%20milvus/Lab-4%20Rag%20Essential_nocreds.ipynb)
 
 ## How this app works? 🚀
 Aplikasi ini memungkinkan pengguna melakukan tanya jawab dengan LLM seputar dokumen yang diupload. Berikut adalah kapabilitas dari aplikasi ini: 
